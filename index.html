@@ -164,19 +164,59 @@
     <main>
       <!-- album section  -->
       <section>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-6">
-              <img src="./images/image-1.jpg" alt="" />
+        <div class="container my-5">
+          <div class="row d-flex align-items-center">
+            <div class="col-sm-12 col-md-12 col-lg-6 w-lg-50">
+              <img src="./images/image-1.jpg" alt="" class="w-100" />
             </div>
             <div class="col-sm-12 col-md-12 col-lg-6">
-              <h2>Every moment is Precious </h2>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi eos culpa minus voluptate soluta. Minima voluptatibus animi odit placeat nam ducimus impedit quidem sapiente quia expedita. Accusantium eligendi omnis magnam?</p>
+              <div
+                class="position-fixed bottom-0 end-0 p-3"
+                style="z-index: 11"
+              >
+                <div
+                  class="toast"
+                  role="alert"
+                  aria-live="assertive"
+                  aria-atomic="true"
+                >
+                  <div class="toast-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="toast"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="toast-body">
+                    Hello, world! This is a toast message.
+                  </div>
+                </div>
+              </div>
+              <h2>Every moment is Precious</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi
+                eos culpa minus voluptate soluta. Minima voluptatibus animi odit
+                placeat nam ducimus impedit quidem sapiente quia expedita.
+                Accusantium eligendi omnis magnam?
+              </p>
+              <button class="btn btn-dark">
+                Explore our album <i class="fa-solid fa-right-long"></i>
+              </button>
             </div>
-            <button class="btn btn-dark">Explore our album</button>
           </div>
         </div>
       </section>
+      <div class="toast show toast-c">
+        <div class="toast-body d-flex">
+          <p class="me-1"><i class="fa-solid fa-gift"></i> 20% off on next booking</p>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+          ></button>
+        </div>
+      </div>
       <!-- package section  -->
       <section>
         <div class="container">
